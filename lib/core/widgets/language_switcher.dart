@@ -23,11 +23,15 @@ class LanguageSwitcherState extends State<LanguageSwitcher> {
         });
       },
       child: Container(
-        width: 80,
+        width: 82,
         height: 32,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(2),
+          borderRadius: BorderRadius.circular(4),
           color: Colors.blue[900],
+          border: Border.all(
+            color: Colors.orange,
+            width: 1, // Adjust the width as needed
+          ),
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -37,11 +41,11 @@ class LanguageSwitcherState extends State<LanguageSwitcher> {
               height: 32,
               decoration: BoxDecoration(
                 color: isEnglish ? Colors.orange : Colors.transparent,
-                borderRadius: BorderRadius.circular(2),
+                borderRadius: BorderRadius.circular(0),
               ),
               child: Center(
                 child: Text(
-                  'EN',
+                  'E',
                   style: TextStyle(
                     color: isEnglish ? Colors.white : Colors.orange,
                     fontWeight: FontWeight.bold,
@@ -54,7 +58,7 @@ class LanguageSwitcherState extends State<LanguageSwitcher> {
               height: 32,
               decoration: BoxDecoration(
                 color: !isEnglish ? Colors.orange : Colors.transparent,
-                borderRadius: BorderRadius.circular(2),
+                borderRadius: BorderRadius.circular(0),
               ),
               child: Center(
                 child: Text(
