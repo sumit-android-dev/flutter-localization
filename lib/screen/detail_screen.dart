@@ -15,7 +15,7 @@ class _DetailScreenState extends State<DetailScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          S.current.appTitle,
+          S.current.detail,
           style: const TextStyle(color: Colors.white),
         ),
         backgroundColor: Colors.blue,
