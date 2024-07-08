@@ -1,6 +1,6 @@
 {
   "@@locale": "hi",
-  "appTitle": "ऐप शीर्षक",
+  "appTitle": "सेवाएं",
   "detail" : "विवरण",
   "changeLanguage" : "भाषा बदलें",
 
@@ -38,7 +38,7 @@
   "trade_license_new_renew": "व्यापार लाइसेंस नया/नवीकरण",
   "new_swm_id": "नई एसडब्ल्यूएम आईडी",
   "movie_shooting_permission": "फिल्म शूटिंग अनुमति",
-  "less": "कम",
+  "less": "अधिक",
   "complaints": "शिकायतें",
   "registration_new_complaint": "नई शिकायत पंजीकरण",
   "complaints_status": "शिकायत स्थिति",

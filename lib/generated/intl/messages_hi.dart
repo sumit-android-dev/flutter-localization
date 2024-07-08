@@ -24,7 +24,7 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "ambulance_service":
             MessageLookupByLibrary.simpleMessage("एम्बुलेंस सेवा"),
-        "appTitle": MessageLookupByLibrary.simpleMessage("ऐप शीर्षक"),
+        "appTitle": MessageLookupByLibrary.simpleMessage("सेवाएं"),
         "auditorium_booking":
             MessageLookupByLibrary.simpleMessage("ऑडिटोरियम बुकिंग"),
         "avail_new_services":
@@ -54,7 +54,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("अंत्येष्टि वैन सेवा"),
         "hoarding_license":
             MessageLookupByLibrary.simpleMessage("होर्डिंग लाइसेंस"),
-        "less": MessageLookupByLibrary.simpleMessage("कम"),
+        "less": MessageLookupByLibrary.simpleMessage("अधिक"),
         "litter_collection_charges":
             MessageLookupByLibrary.simpleMessage("कूड़ा संग्रह शुल्क"),
         "litter_debris_collection":
