@@ -34,10 +34,3 @@ The project is organized into the following folders:
 - **Bloc:** Implements a simple language-switching bloc for managing language state.
 - **Shared Preferences:** Utilizes the `shared_preferences` package to save and retrieve the user's selected language.
 
-## Contributing
-
-Contributions are welcome! Feel free to open issues, submit pull requests, or suggest improvements.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
