@@ -103,7 +103,9 @@ class LanguageSwitcher extends StatelessWidget {
     return BlocBuilder<LanguageBloc, LanguageState>(
       builder: (context, state) {
         bool isEnglish = true;
-        isEnglish = state.locale.languageCode == 'en';
+        if(state is LanguageChangedState){
+          isEnglish = state.locale.languageCode == 'en';
+        }
         return GestureDetector(
           onTap: () {
             final newLocale = isEnglish ? const Locale('hi') : const Locale('en');

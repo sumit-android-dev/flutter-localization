@@ -13,7 +13,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -61,7 +60,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   S.current.new_water_connection),
               buildServiceItem(context, "assets/svg/sewerage_connection.svg",
                   S.current.sewerage_connection),
-              buildServiceItem(context, "assets/svg/new_property_registration.svg",
+              buildServiceItem(
+                  context,
+                  "assets/svg/new_property_registration.svg",
                   S.current.new_property_registration),
               buildServiceItem(context, "assets/svg/property_mutation.svg",
                   S.current.property_mutation),
@@ -87,27 +88,36 @@ class _HomeScreenState extends State<HomeScreen> {
                   S.current.litter_collection_charges),
               buildServiceItem(context, "assets/svg/evidence_certificate.svg",
                   S.current.evidence_certificate),
-              buildServiceItem(context, "assets/svg/fire_extinguishing_service.svg",
+              buildServiceItem(
+                  context,
+                  "assets/svg/fire_extinguishing_service.svg",
                   S.current.fire_extinguishing_service),
               buildServiceItem(context, "assets/svg/hoarding_license.svg",
                   S.current.hoarding_license),
-              buildServiceItem(context, "assets/svg/road_cutting_application.svg",
+              buildServiceItem(
+                  context,
+                  "assets/svg/road_cutting_application.svg",
                   S.current.road_cutting_application),
               buildServiceItem(context, "assets/svg/citizen.svg",
                   S.current.citizen_grievances),
               buildServiceItem(context, "assets/svg/tree_cutting_transit.svg",
                   S.current.tree_cutting_transit),
-              buildServiceItem(context, "assets/svg/trade_license_new_renew.svg",
+              buildServiceItem(
+                  context,
+                  "assets/svg/trade_license_new_renew.svg",
                   S.current.trade_license_new_renew),
               buildServiceItem(
                   context, "assets/svg/new_swm_id.svg", S.current.new_swm_id),
-              buildServiceItem(context, "assets/svg/movie_shooting_permission.svg",
-                  S.current.movie_shooting_permission),
               buildServiceItem(
-                  context, "assets/svg/more.svg", S.current.less),
+                  context,
+                  "assets/svg/movie_shooting_permission.svg",
+                  S.current.movie_shooting_permission),
+              buildServiceItem(context, "assets/svg/more.svg", S.current.less),
             ]),
             buildTransSection(context, S.current.complaints, [
-              buildServiceItem(context, "assets/svg/registration_new_complaint.svg",
+              buildServiceItem(
+                  context,
+                  "assets/svg/registration_new_complaint.svg",
                   S.current.registration_new_complaint),
               buildServiceItem(context, "assets/svg/complaints_status.svg",
                   S.current.complaints_status),
@@ -173,7 +183,8 @@ class _HomeScreenState extends State<HomeScreen> {
     return InkWell(
       onTap: () {
         // Handle item tap
-        Navigator.push(context, MaterialPageRoute(builder: (context)=> DetailScreen()));
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => DetailScreen()));
       },
       child: Column(
         children: [

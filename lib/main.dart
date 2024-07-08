@@ -6,6 +6,8 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'generated/l10n.dart';
 
+/// Don't add const before screen name because it's blocked change language functionality.
+
 void main() {
   runApp(const MyApp());
 }
@@ -19,6 +21,10 @@ class MyApp extends StatelessWidget {
       create: (context) => LanguageBloc(),
       child: BlocBuilder<LanguageBloc, LanguageState>(
         builder: (context, state) {
+          Locale locale = state.locale;
+          if(state is LanguageChangedState){
+            locale = state.locale;
+          }
           return MaterialApp(
             title: 'Flutter Localization',
             debugShowCheckedModeBanner: false,
@@ -33,7 +39,7 @@ class MyApp extends StatelessWidget {
               GlobalCupertinoLocalizations.delegate,
             ],
             supportedLocales: S.delegate.supportedLocales,
-            locale: state.locale,
+            locale: locale,
             home: const SplashScreen(),
           );
         },
