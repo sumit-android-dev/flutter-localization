@@ -1,14 +1,14 @@
 import 'dart:ui';
 
-import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 part 'language_event.dart';
 part 'language_state.dart';
 
 class LanguageBloc extends Bloc<LanguageEvent, LanguageState> {
-  LanguageBloc() : super(LanguageState(Locale('en'))) {
+  LanguageBloc() : super(const LanguageState(Locale('en'))) {
     on<ChangeLanguage>(_onChangeLanguage);
     _loadLanguage();
   }

@@ -170,28 +170,26 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget buildServiceItem(BuildContext context, String icon, String label) {
-    return Container(
-      child: InkWell(
-        onTap: () {
-          // Handle item tap
-          Navigator.push(context, MaterialPageRoute(builder: (context)=> DetailScreen()));
-        },
-        child: Column(
-          children: [
-            SvgPicture.asset(
-              icon,
-              height: 35,
-              width: 35,
-            ),
-            const SizedBox(height: 8.0),
-            Text(
-              label,
-              textAlign: TextAlign.center,
-              maxLines: 2,
-              style: const TextStyle(fontSize: 12.0),
-            ),
-          ],
-        ),
+    return InkWell(
+      onTap: () {
+        // Handle item tap
+        Navigator.push(context, MaterialPageRoute(builder: (context)=> DetailScreen()));
+      },
+      child: Column(
+        children: [
+          SvgPicture.asset(
+            icon,
+            height: 35,
+            width: 35,
+          ),
+          const SizedBox(height: 8.0),
+          Text(
+            label,
+            textAlign: TextAlign.center,
+            maxLines: 2,
+            style: const TextStyle(fontSize: 12.0),
+          ),
+        ],
       ),
     );
   }

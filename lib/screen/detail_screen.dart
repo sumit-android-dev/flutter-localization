@@ -30,7 +30,7 @@ class _DetailScreenState extends State<DetailScreen> {
       body: Container(
         height: double.infinity,
         width: double.infinity,
-        color: Colors.greenAccent,
+        color: Colors.white,
         child: const Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,

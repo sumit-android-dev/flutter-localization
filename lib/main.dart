@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localization/screen/bloc/language_bloc.dart';
-import 'package:flutter_localization/screen/home_screen.dart';
 import 'package:flutter_localization/screen/splash_screen.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
@@ -35,7 +34,7 @@ class MyApp extends StatelessWidget {
             ],
             supportedLocales: S.delegate.supportedLocales,
             locale: state.locale,
-            home: SplashScreen(),
+            home: const SplashScreen(),
           );
         },
       ),
