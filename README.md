@@ -1,16 +1,43 @@
-# flutter_localization
+## Flutter Localization with Bloc, State Management & Shared Preferences
 
-A new Flutter project.
+This repository showcases a Flutter application with integrated localization features leveraging Bloc state management and Shared Preferences for language persistence.
 
-## Getting Started
+## Project Structure
 
-This project is a starting point for a Flutter application.
+The project is organized into the following folders:
 
-A few resources to get you started if this is your first Flutter project:
+- **lib:** Contains the application's source code.
+    - **core:** Encapsulates core functionalities.
+        - **widgets:** Reusable widgets, including a language switcher.
+    - **generated:** Auto-generated files from localization tools.
+    - **intl:** Handles localization resources.
+    - **110n:** Contains language-specific files for translation.
+    - **screen:**  Screen-related logic and widgets.
+        - **bloc:** Implements Bloc patterns for state management.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Features
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Language Switching:** Users can seamlessly switch between different languages.
+- **Bloc State Management:** State management using BLoC pattern for efficient data handling.
+- **Shared Preferences:** Stores the user's preferred language for persistent settings.
+- **Localization:** Supports multiple languages through localization resources.
+
+## Usage
+
+1. **Install dependencies:** `flutter pub get`
+2. **Run the app:** `flutter run`
+3. **Switch languages:** Utilize the provided language switcher to toggle between supported languages.
+
+## Implementation Details
+
+- **Localization:** Uses the `flutter_localizations` package for localization support.
+- **Bloc:** Implements a simple language-switching bloc for managing language state.
+- **Shared Preferences:** Utilizes the `shared_preferences` package to save and retrieve the user's selected language.
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues, submit pull requests, or suggest improvements.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
