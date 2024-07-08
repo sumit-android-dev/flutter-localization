@@ -1,4 +1,4 @@
-## Flutter Localization with Bloc, State Management & Shared Preferences
+## Flutter Localization with Bloc State Management & Shared Preferences
 
 This repository showcases a Flutter application with integrated localization features leveraging Bloc state management and Shared Preferences for language persistence.
 
