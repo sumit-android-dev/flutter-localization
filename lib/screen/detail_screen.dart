@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 
+import '../core/widgets/language_switcher.dart';
 import '../generated/l10n.dart';
 
 class DetailScreen extends StatefulWidget {
-  final Function() onLanguageChange;
-
-  const DetailScreen({super.key, required this.onLanguageChange});
-
+  const DetailScreen({super.key});
   @override
   State<DetailScreen> createState() => _DetailScreenState();
 }
@@ -20,8 +18,14 @@ class _DetailScreenState extends State<DetailScreen> {
           S.current.appTitle,
           style: const TextStyle(color: Colors.white),
         ),
-        iconTheme: const IconThemeData(color: Colors.white),
         backgroundColor: Colors.blue,
+        iconTheme: const IconThemeData(color: Colors.white),
+        actions: [
+          Container(
+            margin: const EdgeInsets.only(right: 16),
+            child: const LanguageSwitcher(),
+          ),
+        ],
       ),
       body: Container(
         height: double.infinity,
@@ -39,8 +43,6 @@ class _DetailScreenState extends State<DetailScreen> {
               ),
               ElevatedButton(
                 onPressed: () {
-                  widget.onLanguageChange();
-                  setState(() {});
                 },
                 child: Text(S.current.changeLanguage),
               ),
