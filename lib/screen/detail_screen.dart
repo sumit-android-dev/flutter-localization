@@ -31,21 +31,11 @@ class _DetailScreenState extends State<DetailScreen> {
         height: double.infinity,
         width: double.infinity,
         color: Colors.greenAccent,
-        child: Center(
+        child: const Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              ElevatedButton(
-                onPressed: () {
-                  
-                },
-                child: Text(S.current.detail),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                },
-                child: Text(S.current.changeLanguage),
-              ),
+
             ],
           ),
         ),

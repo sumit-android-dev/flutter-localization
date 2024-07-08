@@ -110,8 +110,8 @@ class LanguageSwitcher extends StatelessWidget {
             context.read<LanguageBloc>().add(ChangeLanguage(newLocale));
           },
           child: Container(
-            width: 82,
-            height: 32,
+            width: 50,
+            height: 24,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(4),
               color: Colors.blue[900],
@@ -124,8 +124,29 @@ class LanguageSwitcher extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
-                  width: 40,
-                  height: 32,
+                  width: 24,
+                  height: 24,
+                  decoration: BoxDecoration(
+                    color: !isEnglish ? Colors.orange : Colors.transparent,
+                    borderRadius: BorderRadius.circular(0),
+                  ),
+                  child: Container(
+                    alignment: Alignment.center,
+                    margin: const EdgeInsets.only(top: 2),
+                    child: Text(
+                      'अ',
+                      style: TextStyle(
+                        color: !isEnglish ? Colors.white : Colors.orange,
+                        fontWeight: FontWeight.w500,
+                        fontSize: 16,
+                        height: 1.0,
+                      ),
+                    ),
+                  ),
+                ),
+                Container(
+                  width: 24,
+                  height: 24,
                   decoration: BoxDecoration(
                     color: isEnglish ? Colors.orange : Colors.transparent,
                     borderRadius: BorderRadius.circular(0),
@@ -135,24 +156,9 @@ class LanguageSwitcher extends StatelessWidget {
                       'E',
                       style: TextStyle(
                         color: isEnglish ? Colors.white : Colors.orange,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                ),
-                Container(
-                  width: 40,
-                  height: 32,
-                  decoration: BoxDecoration(
-                    color: !isEnglish ? Colors.orange : Colors.transparent,
-                    borderRadius: BorderRadius.circular(0),
-                  ),
-                  child: Center(
-                    child: Text(
-                      'अ',
-                      style: TextStyle(
-                        color: !isEnglish ? Colors.white : Colors.orange,
-                        fontWeight: FontWeight.bold,
+                        fontWeight: FontWeight.w500,
+                        fontSize: 14,
+                        height: 1.0,
                       ),
                     ),
                   ),

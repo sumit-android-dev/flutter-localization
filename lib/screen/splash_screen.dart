@@ -32,7 +32,7 @@ class _SplashScreenState extends State<SplashScreen> {
     return Container(
       width: double.infinity,
       height: double.infinity,
-      padding: const EdgeInsets.only(top: 8),
+      padding: const EdgeInsets.only(top: 0),
       decoration: const BoxDecoration(
 
       ),
